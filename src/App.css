@@ -1,33 +1,57 @@
 .App {
+  border: 10px solid #000;
+  width: 100%;
+  height: calc(100vh - 70px);
+  /* border-radius: 10px; */
+}
+.bottom-controls {
+  background-color: #000;
+  height: 70px;
+  color: aliceblue;
+  padding-top: 15px;
+  user-select: none;
+}
+.infotainment-left {
+ flex: 1;
+ border-right: 1px solid rgba(0,0,0,0.4);
+}
+.infotainment-right {
+  flex: 2;
+}
+
+.vehicle__status-left {
+  /* height: 150px; */
+  border-bottom: 5px solid rgba(0,0,0,0.1);
+}
+
+.vehicle__Status-top {
+  border-bottom: 1px solid rgba(0,0,0,0.006);
+}
+
+.vehicle__Status-middle {
+  font-size: 150px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.vehicle__Status-bottom {
+  border-top: 1px solid rgba(0,0,0,0.006);
+}
+
+.main-car-icon {
+  height: 100px;
+}
+.main-car-icon-div {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.speed-limit-info {
+  width: 70px;
+  float: right;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main__Control-icon {
+  color: aliceblue;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main__Control-icon > i {
+  color: #fff !important;
 }
